@@ -3,7 +3,8 @@
 # Running Code
 Go to localhost in web browser afterwards plus the port number shown in your terminal once it is done compiling.\
 -Run code --> `npm start`\
--Run Tests --> `npm test`
+-Run Tests --> `npm test`\
+To stop the code from running use CTRL + C in the Terminal you are running it from.
 
 # Updating Code
 -Change git branch --> `git checkout [branchName]`\
