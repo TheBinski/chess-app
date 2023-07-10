@@ -1,19 +1,20 @@
 # Caleb Melnychenko Cheat Sheet
 
 # Running Code
--Run code --> `npm start`
--Run Tests --> `npm test`
+Go to localhost in web browser afterwards plus the port number shown in your terminal once it is done compiling.\
+-Run code --> `npm start`\
+-Run Tests --> `npm test`\
 
 # Updating Code
--Change git branch --> `git checkout [branchName]`
--Grab new branches / check for code updates --> `git fetch`
--Obtain new code from current branch --> `git pull`
+-Change git branch --> `git checkout [branchName]`\
+-Grab new branches / check for code updates --> `git fetch`\
+-Obtain new code from current branch --> `git pull`\
 
 # Pushing Code
--Add changes to code for pushing --> `git add -A`
--Check status of added code and committed code --> `git status`
--Commit code with message --> `git commit -m "[INSERT MESSAGE]"`
--Push code --> `git push`
+-Add changes to code for pushing --> `git add -A`\
+-Check status of added code and committed code --> `git status`\
+-Commit code with message --> `git commit -m "[INSERT MESSAGE]"`\
+-Push code --> `git push`\
 
 ------------------------------------------------------------------------------------------------------------
 # EVERYTHING BELOW HERE IS AUTO-GENERATED FROM REACT
