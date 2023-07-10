@@ -3,18 +3,19 @@
 # Running Code
 Go to localhost in web browser afterwards plus the port number shown in your terminal once it is done compiling.\
 -Run code --> `npm start`\
--Run Tests --> `npm test`\
+-Run Tests --> `npm test`
 
 # Updating Code
 -Change git branch --> `git checkout [branchName]`\
 -Grab new branches / check for code updates --> `git fetch`\
--Obtain new code from current branch --> `git pull`\
+-Obtain new code from current branch --> `git pull`
 
 # Pushing Code
+Make sure to save all edited files before adding. Unsaved files will not get added.\
 -Add changes to code for pushing --> `git add -A`\
 -Check status of added code and committed code --> `git status`\
 -Commit code with message --> `git commit -m "[INSERT MESSAGE]"`\
--Push code --> `git push`\
+-Push code --> `git push`
 
 ------------------------------------------------------------------------------------------------------------
 # EVERYTHING BELOW HERE IS AUTO-GENERATED FROM REACT
