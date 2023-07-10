@@ -1,3 +1,24 @@
+# Caleb Melnychenko Cheat Sheet
+
+# Running Code
+-Run code --> `npm start`
+-Run Tests --> `npm test`
+
+# Updating Code
+-Change git branch --> `git checkout [branchName]`
+-Grab new branches / check for code updates --> `git fetch`
+-Obtain new code from current branch --> `git pull`
+
+# Pushing Code
+-Add changes to code for pushing --> `git add -A`
+-Check status of added code and committed code --> `git status`
+-Commit code with message --> `git commit -m "[INSERT MESSAGE]"`
+-Push code --> `git push`
+
+------------------------------------------------------------------------------------------------------------
+# EVERYTHING BELOW HERE IS AUTO-GENERATED FROM REACT
+------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
