@@ -1,6 +1,12 @@
 import './Board.scss';
+import Piece from './Piece';
 
-function Board() {
+function Board(prop) {
+
+    console.log(prop.pieces);
+
+    // TODO - REWORK BOARD CREATION TO USE SQUARES THAT CAN TAKE A PIECE
+
     return (
     <div className="board-container">
         <div className="row-numbers">
@@ -15,84 +21,212 @@ function Board() {
         </div>
         <div className="board">
             <div className="row1">
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
             </div>
             <div className="row2">
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
             </div>
             <div className="row3">
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
             </div>
             <div className="row4">
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
             </div>
             <div className="row5">
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
             </div>
             <div className="row6">
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
             </div>
             <div className="row7">
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
             </div>
             <div className="row8">
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
-                <div className="blackSquare"></div>
-                <div className="whiteSquare"></div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
+                <div className="blackSquare">
+                    <Piece/>
+                </div>
+                <div className="whiteSquare">
+                    <Piece/>
+                </div>
             </div>
         </div>
         <div className="column-letters">
