@@ -2,6 +2,7 @@
     display: flex;
     border-radius: 4px;
     border: 8px solid burlywood;
+    margin-left: 35px;
 }
 
 .whiteSquare, .blackSquare {
@@ -22,5 +23,34 @@
 
     &:hover {
         background-color: rgb(73, 73, 73);
+    }
+}
+
+.column-letters, .row-numbers {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.column-letters {
+    margin-left: 43px;
+    display: flex;
+     
+    label {
+        width: 80px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.row-numbers {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    label {
+        height: 80px;
+        display: flex;
+        align-items: center;
     }
 }
