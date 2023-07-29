@@ -3,22 +3,21 @@ import Square from './Square';
 
 function Board(prop) {
 
-    console.log(prop.pieces);
-
     let rows = [];
     let squareNum = 1;
 
     for (let i = 8; i >= 1; i--) {
         let rowName = "row row"+i;
-        rows.push(<div className={rowName}>
-            <Square squareNumber={squareNum++} squareRow={i}/>
-            <Square squareNumber={squareNum++} squareRow={i}/>
-            <Square squareNumber={squareNum++} squareRow={i}/>
-            <Square squareNumber={squareNum++} squareRow={i}/>
-            <Square squareNumber={squareNum++} squareRow={i}/>
-            <Square squareNumber={squareNum++} squareRow={i}/>
-            <Square squareNumber={squareNum++} squareRow={i}/>
-            <Square squareNumber={squareNum++} squareRow={i}/>
+        let xPos = 1;
+        rows.push(<div key={'row'+i} className={rowName}>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
+            <Square squareNumber={squareNum++} squareRow={i} pieces={prop.pieces} x={xPos++} y={i}/>
         </div>);
     }
 

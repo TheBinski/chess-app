@@ -8,17 +8,14 @@
 }
 
 .whiteSquare {
-    background-color: white;
-
-    &:hover {
-        background-color: lightgray;
-    }
+    background-image: url('/images/woodTexture.jpg');
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
 }
 
 .blackSquare {
-    background-color: black;
-
-    &:hover {
-        background-color: rgb(73, 73, 73);
-    }
+    background-image: url('/images/woodTextureDark.jpg');
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    transform: rotate(180deg);
 }

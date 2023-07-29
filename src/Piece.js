@@ -1,3 +1,5 @@
+import './Piece.scss';
+
 /* 
 / Players: Empty == 0, White == 1, Black == 2
 / Types: 
@@ -20,48 +22,85 @@ function newPiece(player, name, type, column, row) {
         };
     }
 
-function Piece( player, type ) {
+function Piece(props) {
+
+    let player = props.piece.Player;
+    let type = props.piece.Type;
 
     let className = '';
     let pieceType = '';
+    let pieceImage = {};
 
     switch(player) {
         case 1:
-            className = 'white-piece';
+            className = 'white piece';
+            switch(type) {
+                case 1:
+                    pieceType = 'King';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/wKing.png') + ')'};
+                    break;
+                case 2:
+                    pieceType = 'Queen';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/wQueen.png') + ')'};
+                    break;
+                case 3:
+                    pieceType = 'Rook';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/wRook.png') + ')'};
+                    break;
+                case 4:
+                    pieceType = 'Bishop';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/wBishop.png') + ')'};
+                    break;
+                case 5:
+                    pieceType = 'Knight';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/wKnight.png') + ')'};
+                    break;
+                case 6:
+                    pieceType = 'Pawn';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/wPawn.png') + ')'};
+                    break;
+                default:
+                    pieceType = '';
+            }
             break;
         case 2:
-            className = 'black-piece';
+            className = 'black piece';
+            switch(type) {
+                case 1:
+                    pieceType = 'King';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/bKing.png') + ')'};
+                    break;
+                case 2:
+                    pieceType = 'Queen';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/bQueen.png') + ')'};
+                    break;
+                case 3:
+                    pieceType = 'Rook';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/bRook.png') + ')'};
+                    break;
+                case 4:
+                    pieceType = 'Bishop';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/bBishop.png') + ')'};
+                    break;
+                case 5:
+                    pieceType = 'Knight';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/bKnight.png') + ')'};
+                    break;
+                case 6:
+                    pieceType = 'Pawn';
+                    pieceImage = {backgroundImage: 'url(' + require('./images/bPawn.png') + ')'};
+                    break;
+                default:
+                    pieceType = '';
+            }
             break;
         default:
-            className = '';
-    }
-
-    switch(type) {
-        case 1:
-            pieceType = 'King';
-            break;
-        case 2:
-            pieceType = 'Queen';
-            break;
-        case 3:
-            pieceType = 'Rook';
-            break;
-        case 4:
-            pieceType = 'Bishop';
-            break;
-        case 5:
-            pieceType = 'Knight';
-            break;
-        case 6:
-            pieceType = 'Pawn';
-            break;
-        default:
-            pieceType = '';
+            className = 'noPiece';
     }
 
     return (
         <div className={className}>
-            <div className={pieceType}></div>
+            <button className={pieceType} style={pieceImage}></button>
         </div>
     );
 }

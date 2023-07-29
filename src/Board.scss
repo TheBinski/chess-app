@@ -1,8 +1,9 @@
 .board {
     display: flex;
     flex-direction: column;
+    border: 8px solid rgb(181 168 139);
     border-radius: 4px;
-    border: 8px solid burlywood;
+    border-style: outset;
     margin-left: 35px;
 
     .row {
