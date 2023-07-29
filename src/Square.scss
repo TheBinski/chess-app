@@ -1,0 +1,24 @@
+.whiteSquare, .blackSquare, .errorSquare {
+    height: 80px;
+    width: 80px;
+}
+
+.errorSquare {
+    background-color: red;
+}
+
+.whiteSquare {
+    background-color: white;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+.blackSquare {
+    background-color: black;
+
+    &:hover {
+        background-color: rgb(73, 73, 73);
+    }
+}
