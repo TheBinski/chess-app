@@ -20,12 +20,13 @@ function Square(props) {
     } else {
         squareColor = props.squareNumber%2 === 0 ? 'whiteSquare' : 'blackSquare';
     }
-    classes += " " + squareColor + " " + props.x + props.y;
+    let squareId= "" + props.x + props.y;
+    classes += " " + squareColor;
 
     let piece = findPiece(props.pieces, props.x, props.y);
 
     return (
-        <div className={classes}>
+        <div id={squareId} className={classes}>
             <Piece piece={piece}/>
         </div>
     );

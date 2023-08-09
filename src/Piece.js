@@ -13,16 +13,24 @@ import './Piece.scss';
 */
 
 function newPiece(player, name, type, column, row) {
-        return {
-            Player: player,
-            PieceName: name,
-            Type: type,
-            Column: column,
-            Row: row,
-        };
-    }
+    return {
+        Player: player,
+        PieceName: name,
+        Type: type,
+        Column: column,
+        Row: row,
+    };
+}
 
 function Piece(props) {
+
+    function selectedSquare() {
+        if (props.piece.Column !== undefined && props.piece.Row !== undefined) {
+            let squarePos = "" + props.piece.Column + props.piece.Row;
+            let square = document.getElementById(squarePos);
+            square.children[0].children[0].classList.toggle("selected");
+        }
+    }
 
     let player = props.piece.Player;
     let type = props.piece.Type;
@@ -98,9 +106,11 @@ function Piece(props) {
             className = 'noPiece';
     }
 
+    pieceType = pieceType === '' ? 'Empty' : pieceType;
+
     return (
         <div className={className}>
-            <button className={pieceType} style={pieceImage}></button>
+            <button className={pieceType} style={pieceImage} onClick={selectedSquare}></button>
         </div>
     );
 }
